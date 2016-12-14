@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>中国-葡语国家经贸合作及人才信息网</title>
+		<!--第一个meta标签表示：强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览；-->
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<!--第二个meta标签是iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览；-->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<!--第三个meta标签也是iphone的私有标签，它指定的iphone中safari顶端的状态条的样式；-->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--引入CSS样式-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!--引入字体计算JS-->
+		<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.indexIconBox{
+				margin-top: 0.7rem;
+			}
+			.leftIcon {
+				width: 1.8rem;
+			}
+			.container{
+				margin-top: 0px;
+			}
+			body{
+				background-color: #FFFFFF
+			}
+		</style>
+	</head>
+	<body>
+		<div class="restrain">
+			<div class="sideBar">
+				<div class="backBox"><img src="img/icon/close .png"/></div>
+				<div class="sideLoginBox">
+					<dd><img src="img/icon/logo.png"/></dd>
+					<dt><a href="loginWeb.html">点击登录</a></dt>
+				</div>
+				<div class="sideBodyBox">
+					<ul>
+						<li><a href="index.html"><dd><img src="img/icon/home.png"/></dd><dt>首页</dt></a></li>
+						<li><a href="foodBankWeb.html"><dd><img src="img/icon/foodBank.png"/></dd><dt>食品资料库</dt></a></li>
+						<li><a href="talentsBankWeb.html"><dd><img src="img/icon/talentsBank.png"/></dd><dt>人才信息库</dt></a></li>
+						<li><a href="exhibitionWeb.html"><dd><img src="img/icon/exhibition.png"/></dd><dt>展会资讯</dt></a></li>
+						<li><a href="tradeWeb.html"><dd><img src="img/icon/tradeWeb.png"/></dd><dt>经贸信息</dt></a></li>
+						<li><a href="cooperatorWeb.html"><dd><img src="img/icon/company.png"/></dd><dt>合作单位</dt></a></li>
+						<li><a href="aboutUsWeb.html"><dd><img src="img/icon/aboutUs.png"/></dd><dt>关于我们 </dt></a></li>
+						<li class="moreTool"><a><dd><img src="img/icon/toolBox.png"/></dd><dt>常用工具 </dt></a></li>
+					</ul>
+				</div>
+				<div class="sideToolBox">
+					<div class="slideDown"><img src="img/icon/blueDown.png"/></div>
+					<ul>
+						<li>
+							<a href="checkHsWeb.html">
+								<div><img src="img/icon/hs.png" /></div>
+								<p>HS查询</p>
+							</a>
+						</li>
+						<li>
+							<a href="translateWeb.html">
+								<div><img src="img/icon/translate.png" /></div>
+								<p>翻译工具</p>
+							</a>
+						</li>
+						<li>
+							<a href="leaveOnlineWeb.html">
+								<div><img src="img/icon/leavemess.png" /></div>
+								<p>在线留言</p>
+							</a>
+						</li>
+						<li>
+							<a href="lawWeb.html">
+								<div><img src="img/icon/law.png" /></div>
+								<p>法律资讯 </p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="sideBarBg" class="hide"></div>
+			<header>
+				<div class="leftIcon">
+					<a href="foodBankWeb.html"><img src="img/icon/back.png" /></a>
+				</div>
+				登陆
+				<div class="rightIcon">
+					<a href="#"><img src="img/icon/menu.png" /></a>
+				</div>
+			</header>
+			<div class="container">
+				 <div class="loginBody">
+				 	<div class="logoBox">
+				 		<img src="img/icon/logo.png"/>
+				 	</div>
+				 	<div class="loginEach">
+				 		<div class="loginBodyLeft">会员类型</div>
+				 		<div class="loginBodyRight">
+				 			<a>企业用户</a>
+				 			<a>双语人才</a>
+				 		</div>
+				 	</div>
+				 	<div class="loginEach">
+				 		<div class="loginBodyLeft">账号</div>
+				 		<div class="loginBodyRight"><input type="text" name="" id="" value="" /></div>
+				 	</div>
+				 	<div class="loginEach">
+				 		<div class="loginBodyLeft">密码</div>
+				 		<div class="loginBodyRight"><input type="text" name="" id="" value="" /></div>
+				 	</div>
+				 </div>
+				 <div class="bthBox">
+				 	<a class="loginBth" href="loginWeb.html">登陆</a>
+				 	<a href="resigterWeb.html" class="registerBtn">注册</a>
+				 	<a class="lostNumber">忘记密码</a>
+				 </div>
+			</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/side.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".loginBodyRight a").click(function(){
+			$(this).addClass("memberStyleActive").siblings().removeClass("memberStyleActive");
+		})
+	</script>
+</html>
